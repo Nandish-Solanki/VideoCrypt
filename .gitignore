@@ -1,0 +1,15 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Build output
+bin/
+target/
+*.class
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+.env

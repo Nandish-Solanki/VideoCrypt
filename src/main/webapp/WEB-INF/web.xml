@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>VideoCrypt</display-name>
+
+    <!-- RegisterServlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.videocrypt.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- LoginServlet -->
+    <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.videocrypt.controller.LoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+
+    <!-- UploadVideoServlet -->
+    <servlet>
+    <servlet-name>UploadVideoServlet</servlet-name>
+    <servlet-class>com.videocrypt.controller.UploadVideoServlet</servlet-class>
+    </servlet>
+<servlet-mapping>
+    <servlet-name>UploadVideoServlet</servlet-name>
+    <url-pattern>/UploadVideoServlet</url-pattern>
+</servlet-mapping>
+
+    <!-- ViewVideosServlet -->
+    <servlet>
+        <servlet-name>ViewVideosServlet</servlet-name>
+        <servlet-class>com.videocrypt.controller.ViewVideosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewVideosServlet</servlet-name>
+        <url-pattern>/ViewVideosServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- AdminDashboardServlet (if exists) -->
+    <servlet>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <servlet-class>com.videocrypt.controller.AdminDashboardServlet</servlet-class>
+    </servlet>
+<servlet-mapping>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <url-pattern>/AdminDashboardServlet</url-pattern>
+</servlet-mapping>
+
+    <!-- LogoutServlet (if you implement it) -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.videocrypt.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Default Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+    <servlet-name>DeleteVideoServlet</servlet-name>
+    <servlet-class>com.videocrypt.controller.DeleteVideoServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteVideoServlet</servlet-name>
+    <url-pattern>/DeleteVideoServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ClientDashboardServlet</servlet-name>
+    <servlet-class>com.videocrypt.controller.ClientDashboardServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ClientDashboardServlet</servlet-name>
+    <url-pattern>/ClientDashboardServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+</web-app>
